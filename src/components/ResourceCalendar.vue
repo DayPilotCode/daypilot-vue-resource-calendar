@@ -8,8 +8,8 @@
           selectMode="Day"
           :startDate="initialNavigatorDate"
           :selectionDay="initialNavigatorDate"
-          :onTimeRangeSelected="onNavTimeRangeSelected"
           :events="events"
+          @timeRangeSelected="onNavTimeRangeSelected"
       />
     </div>
     <div class="content">
@@ -20,13 +20,13 @@
           :columns="columns"
           :startDate="startDate"
           timeRangeSelectedHandling="Enabled"
-          :onTimeRangeSelected="onCalTimeRangeSelected"
-          :onEventClick="onEventClick"
           eventDeleteHandling="Disabled"
-          :onEventMoved="onEventMoved"
-          :onEventResized="onEventResized"
           :eventBorderRadius="4"
-          :onBeforeEventRender="onBeforeEventRender"
+          @beforeEventRender="onBeforeEventRender"
+          @timeRangeSelected="onCalTimeRangeSelected"
+          @eventClick="onEventClick"
+          @eventMoved="onEventMoved"
+          @eventResized="onEventResized"
       />
     </div>
   </div>
