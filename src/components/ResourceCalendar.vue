@@ -76,12 +76,27 @@ const onBeforeEventRender = (args) => {
       left: 4,
       height: 24,
       top: 4,
-      right: 4,
+      right: 32,
       html: args.data.text,
       padding: 2,
       horizontalAlignment: "center",
       backColor: "#fff",
+      borderRadius: 4,
       style: "opacity: 0.5"
+    },
+    {
+      top: 4,
+      right: 4,
+      width: 24,
+      height: 24,
+      padding: 2,
+      symbol: "/icons/daypilot.svg#x-2",
+      backColor: "#00000033",
+      fontColor: "#fff",
+      borderRadius: 4,
+      onClick: args => {
+        calendar.value.control.events.remove(args.source)
+      }
     }
   ]
 }
