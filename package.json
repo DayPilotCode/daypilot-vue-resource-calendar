@@ -1,5 +1,5 @@
 {
-  "name": "vue-resource-calendar",
+  "name": "vue-resource-calendar-open-source",
   "version": "0.1.0",
   "private": true,
   "license": "Apache-2.0",
@@ -13,7 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@daypilot/daypilot-lite-vue": "^5.2.0",
+    "@daypilot/daypilot-lite-vue": "^6.2.0",
     "vue": "^3.5.22"
   },
   "devDependencies": {

@@ -1,16 +1,7 @@
 <template>
-  <div id="app">
-    <ResourceCalendar />
-  </div>
+  <ResourceCalendar />
 </template>
 
-<script>
+<script setup>
 import ResourceCalendar from './components/ResourceCalendar.vue'
-
-export default {
-  name: 'app',
-  components: {
-    ResourceCalendar
-  }
-}
 </script>
